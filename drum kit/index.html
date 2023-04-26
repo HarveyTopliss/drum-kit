@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/9288/9288585.png"
+    />
+  </head>
+  <body>
+    <div class="key-bindings">
+      <h2>Key Mapping</h2>
+      <ul class="key-list">
+        <li>
+          <kbd class="key">A</kbd>
+          <span class="key-sound">Crash</span>
+        </li>
+        <li>
+          <kbd class="key">S</kbd>
+          <span class="key-sound">Ride</span>
+        </li>
+        <li>
+          <kbd class="key">D</kbd>
+          <span class="key-sound">Floor tom</span>
+        </li>
+        <li>
+          <kbd class="key">F</kbd>
+          <span class="key-sound">Mid tom</span>
+        </li>
+        <li>
+          <kbd class="key">G</kbd>
+          <span class="key-sound">High tom</span>
+        </li>
+        <li>
+          <kbd class="key">H</kbd>
+          <span class="key-sound">Kick</span>
+        </li>
+        <li>
+          <kbd class="key">J</kbd>
+          <span class="key-sound">Snare</span>
+        </li>
+        <li>
+          <kbd class="key">K</kbd>
+          <span class="key-sound">Hi-Hat Open</span>
+        </li>
+        <li>
+          <kbd class="key">L</kbd>
+          <span class="key-sound">Hi-Hat Closed</span>
+        </li>
+      </ul>
+    </div>
+    <div class="left-panel">
+      <h1 class="title">JavaScript Drum Kit</h1>
+      <div class="drum-kit-section">
+        <kbd data-key="a" class="key">A</kbd>
+        <kbd data-key="s" class="key">S</kbd>
+        <kbd data-key="d" class="key">D</kbd>
+        <kbd data-key="f" class="key">F</kbd>
+        <kbd data-key="g" class="key">G</kbd>
+        <kbd data-key="h" class="key">H</kbd>
+        <kbd data-key="j" class="key">J</kbd>
+        <kbd data-key="k" class="key">K</kbd>
+        <kbd data-key="l" class="key">L</kbd>
+
+        <img
+          id="crash-cymbal"
+          src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/img/crash.png"
+        />
+        <img
+          id="hi-hat-top-cymbal"
+          src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/img/hihat-top.png"
+        />
+        <img
+          id="drum-kit"
+          src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/img/drum-kit.png"
+        />
+      </div>
+    </div>
+    <audio
+      data-key="j"
+      src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/snare.wav"
+    ></audio>
+    <audio
+      data-key="h"
+      src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/kick.wav"
+    ></audio>
+    <audio
+      data-key="g"
+      src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-high.wav"
+    ></audio>
+    <audio
+      data-key="f"
+      src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-mid.wav"
+    ></audio>
+    <audio
+      data-key="d"
+      src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/tom-low.wav"
+    ></audio>
+    <audio
+      data-key="a"
+      src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/crash.wav"
+    ></audio>
+    <audio
+      data-key="s"
+      src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/ride.wav"
+    ></audio>
+    <audio
+      data-key="k"
+      src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-open.wav"
+    ></audio>
+    <audio
+      data-key="l"
+      src="https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/sounds/hihat-close.wav"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: none;
+}
+
+.left-panel {
+  width: 1600px;
+  margin-right: 20px;
+  float: right;
+}
+
+.title {
+  margin-top: 110px;
+  font-family: cursive;
+  font-size: 60px;
+  text-align: center;
+  color: rgb(218, 0, 0);
+}
+
+.drum-kit-section {
+  position: relative;
+  margin-top: 30px;
+  margin-right: 400px;
+  text-align: right;
+}
+
+#drum-kit {
+  min-width: 800px;
+}
+
+#crash-cymbal {
+  position: absolute;
+  min-width: 240px;
+  top: 140px;
+  left: 475px;
+  transform: rotate(-7.4deg);
+  transition: all 0.05s ease-in-out;
+}
+
+#hi-hat-top-cymbal {
+  position: absolute;
+  min-width: 227px;
+  top: 211px;
+  right: 66px;
+  transition: all 0.05s ease-in-out;
+}
+
+.key[data-key] {
+  scale: 1.1;
+}
+
+.key[data-key='a'] {
+  position: absolute;
+  top: 110px;
+  left: 520px;
+}
+
+.key[data-key='s'] {
+  position: absolute;
+  top: 110px;
+  left: 620px;
+}
+
+.key[data-key='d'] {
+  position: absolute;
+  bottom: 230px;
+  left: 580px;
+}
+
+.key[data-key='f'] {
+  position: absolute;
+  top: 295px;
+  left: 690px;
+}
+
+.key[data-key='g'] {
+  position: absolute;
+  top: 315px;
+  right: 320px;
+}
+
+.key[data-key='h'] {
+  position: absolute;
+  bottom: 220px;
+  right: 390px;
+}
+
+.key[data-key='j'] {
+  position: absolute;
+  bottom: 305px;
+  right: 200px;
+}
+
+.key[data-key='k'] {
+  position: absolute;
+  top: 200px;
+  right: 210px;
+}
+
+.key[data-key='l'] {
+  position: absolute;
+  top: 200px;
+  right: 110px;
+}
+
+.key-press {
+  scale: 1.2;
+}
+
+.key-bindings {
+  height: 90vh;
+  width: 225px;
+  padding-bottom: 100px;
+  float: right;
+  text-align: left;
+  color: white;
+  background-color: black;
+}
+
+.key-bindings > h2 {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-size: 35px;
+  font-family: serif;
+  text-align: center;
+}
+
+.key-list {
+  height: 700px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
+  font-size: 20px;
+  list-style: none;
+  text-align: left;
+  color: black;
+  background-color: white;
+}
+
+.key-list > li {
+  height: 10%;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.key-sound {
+  display: inline-block;
+  margin-left: 3px;
+  margin-top: 0px;
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.key {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: solid black;
+  border-width: 2px 5px 7px 3px;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  font-family: Helvetica;
+  text-align: center;
+  background-color: rgb(37, 37, 37);
+  transition: all 0.07s ease-in-out;
+}
